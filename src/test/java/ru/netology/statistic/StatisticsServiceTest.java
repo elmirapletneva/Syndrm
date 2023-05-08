@@ -22,8 +22,8 @@ public class StatisticsServiceTest {
     void findMaxBeginning() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {90, 12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
-        long expected = 90;
+        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 99, 8, 6, 11, 11, 12};
+        long expected = 99;
 
         long actual = service.findMax(incomesInBillions);
 
